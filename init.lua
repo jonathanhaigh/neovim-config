@@ -22,6 +22,12 @@ vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+
+-----------------------------------------------------------------------
+-- Line width
+-----------------------------------------------------------------------
+vim.opt.colorcolumn = "100"
+
 -----------------------------------------------------------------------
 -- Searching
 -----------------------------------------------------------------------
@@ -86,7 +92,6 @@ Plug 'voldikss/vim-floaterm'
 Plug 'nvim-lua/plenary.nvim'
 
 -- Finding things
-Plug 'BurntSushi/ripgrep'
 Plug 'nvim-telescope/telescope.nvim'
 
 -- File browser
@@ -134,6 +139,7 @@ require("hlargs-config")
 require("mason-config")
 require("monokai-config")
 require("rust-tools-config")
+require("telescope-config")
 require("tree-config")
 require("treesitter-config")
 require("trouble-config")
