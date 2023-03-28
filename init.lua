@@ -113,6 +113,9 @@ Plug 'folke/trouble.nvim'
 -- Color scheme
 Plug 'tanvirtin/monokai.nvim'
 
+-- Code formatting
+Plug 'Chiel92/vim-autoformat'
+
 vim.call('plug#end')
 
 -----------------------------------------------------------------------
@@ -144,3 +147,4 @@ require("tree-config")
 require("treesitter-config")
 require("trouble-config")
 require("vimspector-config")
+require("autoformat-config")
