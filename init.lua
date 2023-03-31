@@ -3,7 +3,6 @@
 -----------------------------------------------------------------------
 vim.g.mapleader = ','
 
-
 -----------------------------------------------------------------------
 -- Disable netrw (default file browser)
 -----------------------------------------------------------------------
@@ -116,6 +115,27 @@ Plug 'tanvirtin/monokai.nvim'
 -- Code formatting
 Plug 'Chiel92/vim-autoformat'
 
+-- Tabs
+Plug 'romgrk/barbar.nvim'
+
+-- Key binding popup
+Plug 'folke/which-key.nvim'
+
+-- Easier key binding setup
+Plug 'mrjones2014/legendary.nvim'
+
+-- Nicer popups
+Plug 'stevearc/dressing.nvim'
+
+-- Incremental rename using LSP
+Plug 'smjonas/inc-rename.nvim'
+
+-- Highlight words that match the one under the cursor
+Plug 'RRethy/vim-illuminate'
+
+-- Highlight letters in line to show best way to jump to words
+Plug 'unblevable/quick-scope'
+
 vim.call('plug#end')
 
 -----------------------------------------------------------------------
@@ -137,8 +157,8 @@ require("autopairs-config")
 require("comment-config")
 require("completion-config")
 require("diags-config")
-require("floaterm-config")
 require("hlargs-config")
+require("inc-rename-config")
 require("mason-config")
 require("monokai-config")
 require("rust-tools-config")
@@ -146,5 +166,5 @@ require("telescope-config")
 require("tree-config")
 require("treesitter-config")
 require("trouble-config")
-require("vimspector-config")
-require("autoformat-config")
+require("which-key-config")
+require("legendary-config")

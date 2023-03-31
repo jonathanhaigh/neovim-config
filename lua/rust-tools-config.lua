@@ -11,7 +11,11 @@ rt.setup({
   },
   settings = {
     ["rust-analyzer"] = {
-      procMacro = { enable = true },
+      diagnostics = {
+        enable = true,
+        disabled = {"unresolved-proc-macro"},
+        enableExperimental = true,
+      }
     }
   }
 
