@@ -26,6 +26,10 @@ require('legendary').setup({
         { '<A-9>', '<cmd>BufferGoto 9<cr>', description = 'Go to tab 9' },
         { '<A-0>', '<cmd>BufferGoto 0<cr>', description = 'Go to last tab' },
 
+        ------------------------------------------------------------------------
+        -- For LSP
+        ------------------------------------------------------------------------
+        { 'gr', vim.lsp.buf.references, description = "See references of item under cursor" },
 
         ------------------------------------------------------------------------
         -- For Floaterm
